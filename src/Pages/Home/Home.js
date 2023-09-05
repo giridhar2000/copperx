@@ -24,6 +24,17 @@ import Marquee from "react-fast-marquee";
 import multinetwork from "../../Assets/img/multinetwork.svg"
 import multitoken from "../../Assets/img/multitoken.svg"
 import sdks from "../../Assets/img/sdks.svg"
+import paymentDone from "../../Assets/img/payment-done.svg"
+import accounting from "../../Assets/img/accounting.svg"
+import support from "../../Assets/img/support.svg"
+import fraud from "../../Assets/img/fraud.svg"
+import Party from "../../Assets/img/3rd-party.svg"
+import customer from "../../Assets/img/customer.svg"
+import IS from "../../Assets/img/instant-settlement.svg"
+import NC from "../../Assets/img/no-chargeback.svg"
+import GG from "../../Assets/img/go-global.svg"
+import LF from "../../Assets/img/low-fees.svg"
+import logoImg from "../../Assets/img/logoImg.png"
 
 export default function Home() {
     const currency1 = ["BTC", "SOLANA", "MATIC", "BRIDGE", "GATECODE-PAY", "ETH", "POLYGON", "BTC", "SOLANA", "MATIC", "BRIDGE", "GATECODE-PAY", "ETH", "POLYGON"]
@@ -121,25 +132,132 @@ export default function Home() {
             </div>
 
             <div className='webhooks'>
-                <div className='wh'>
-                    <img style={{ width: "25%" }} src={multinetwork} alt="mutinetwork-img" />
-                    <h2>Support Multiple Networks</h2>
-                    <p style={{ margin: 0 }}>In-built support for Ethereum, Polygon, Solana and Binance Smart Chain</p>
-                </div>
-                <div className='wh'>
-                    <div>
-                        <img src={multitoken} alt="multitoken-img" />
-                        <h2>Support Multiple Tokens</h2>
-                        <p>Accept payments in BTC, ETH, USDC, EURC, USDT, DAI, SOL and more</p>
+                <div className='wh-body'>
+                    <div className='wh'>
+                        <img src={multinetwork} alt="mutinetwork-img" />
+                        <h2>Support Multiple Networks</h2>
+                        <p style={{ margin: 0 }}>In-built support for Ethereum, Polygon, Solana and Binance Smart Chain</p>
+                    </div>
+                    <div className='wh'>
+                        <div>
+                            <img src={multitoken} alt="multitoken-img" />
+                            <h2>Support Multiple Tokens</h2>
+                            <p>Accept payments in BTC, ETH, USDC, EURC, USDT, DAI, SOL and more</p>
+                        </div>
+                    </div>
+                    <div className='wh'>
+                        <div>
+                            <img src={sdks} alt="multitoken-img" />
+                            <h2>APIs & Integrations</h2>
+                            <p>Ready to use examples, Developer Docs, and Sandbox Environment to get started.</p>
+                        </div>
                     </div>
                 </div>
-                <div className='wh'>
-                    <div>
-                        <img src={sdks} alt="multitoken-img" />
-                        <h2>APIs & Integrations</h2>
-                        <p>Ready to use examples, Developer Docs, and Sandbox Environment to get started.</p>
+
+                <div className='usecase' style={{ backgroundColor: "rgb(30,35,46)", marginBottom: "5vh", padding: 0 }}>
+                    <div className='usecase-text' style={{ paddingLeft: "5vh" }}>
+                        <h2 style={{ margin: 0 }}>Webhooks</h2>
+                        <p style={{ color: "white" }}>Realtime updates for every event happening in your Copperx account</p>
+                    </div>
+                    <img src={paymentDone} alt='payment-img' />
+                </div>
+            </div>
+
+            <div className='designed'>
+                <div className='designed-text'>
+                    <p style={{ color: "#4C63ED" }}>ONE API - MANY FEATURES</p>
+                    <h2>Designed for the whole company in mind</h2>
+                    <p className='desc'>Running a business requires powerful coordination across multiple teams. We have pre-build dashboards, reports, and integrations to cater needs of different teams.</p>
+                </div>
+
+                <div className='designed-imgs'>
+                    <div className='di'>
+                        <div>
+                            <div className='di-img img1'>
+                                <img src={accounting} alt='' />
+                            </div>
+                            <p>Ready for accounting</p>
+                            <p className="di-desc">Generate reports for payment reconciliation and audit-ready financial statements.</p>
+                        </div>
+                    </div>
+                    <div className='di'>
+                        <div>
+                            <div className='di-img img2'>
+                                <img src={support} alt='' />
+                            </div>
+                            <p>Operations & Support</p>
+                            <p className="di-desc">Our dashboard helps your team navigate situations and stay informed about what's happening.</p>
+                        </div>
+                    </div>
+                    <div className='di'>
+                        <div>
+                            <div className='di-img img3'>
+                                <img src={fraud} alt='' />
+                            </div>
+                            <p>AML & Fraud Detection</p>
+                            <p className="di-desc">Real-time monitoring for AML to comply with local regulations.</p>
+                        </div>
+                    </div>
+                    <div className='di'>
+                        <div>
+                            <div className='di-img img4'>
+                                <img src={Party} alt='' />
+                            </div>
+                            <p>3rd Party Integrations</p>
+                            <p className="di-desc">Use our powerful plugins for Shopify, WooCommerce, BigCommerce, and QuickBooks.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='global-buisness'>
+                <div className='designed-text'>
+                    <p style={{ color: "#4C63ED" }}>READY TO TAKE YOUR BUSINESS GLOBAL?</p>
+                    <h2>Why you should accept crypto payments</h2>
+                    <p className='desc'>Go global, grow your revenue, increase profit using the power of blockchain.</p>
+                </div>
+
+                <div className='gb-table'>
+                    <div className='gb-row'>
+                        <img src={customer} alt='' />
+                        <img src={NC} alt='' />
+                        <img src={GG} alt='' />
+                        <img src={LF} alt='' />
+                        <img src={IS} alt='' />
+                    </div>
+                    <div className='gb-row'>
+                        <p className='gl-heading'>Access to new customer base</p>
+                        <p className='gl-heading'>No Chargebacks</p>
+                        <p className='gl-heading'>Go global from day one</p>
+                        <p className='gl-heading'>Low fees</p>
+                        <p className='gl-heading'>Instant Settlements</p>
+                    </div>
+                    <div className='gb-row'>
+                        <p className='gl-desc'>Gain access to $1 Trillion+ crypto market and 420 million users</p>
+                        <p className='gl-desc'>Receive funds in your wallets instantly using the power of blockchain</p>
+                        <p className='gl-desc'>Anyone can transact with anybody across the world instantly without any intermediary</p>
+                        <p className='gl-desc'>Increase your profit up to 25% due to extremely low fees</p>
+                        <p className='gl-desc'>Crypto payments are irreversible by nature that eliminates fraud & chargebacks</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className='payments'>
+                <h1>Accept payments from anyone &<br /> anywhere</h1>
+                <p>It's the right time to join the crypto revolution. Join Copperx Now!</p>
+                <div className='btns'>
+                    <button className='gs-btn'>Get Started</button>
+                    <button className='login-btn'>Book a Demo</button>
+                </div>
+            </div>
+
+            <div className='footer'>
+                <div className='hom-footer'>
+                    <img src={logoImg} alt='logo-img' />
+                    <h1>Simplified Payments for Web3 Buisnesses.</h1>
+                </div>
+                
             </div>
 
         </div>
