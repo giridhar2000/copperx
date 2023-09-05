@@ -1,35 +1,37 @@
-.home{
+.home {
     font-family: Euclid;
     font-weight: 600;
 }
 
-.center{
+.center {
     width: 700px;
     margin: 1rem auto;
 }
 
-.home-container h1{
+.home-container h1 {
     font-family: 'Playfair Display', serif;
     font-size: 64px;
     text-align: center;
 }
 
-.home-container p{
-    color: rgba(0,0,0,0.7);
+.home-container p {
+    color: rgba(0, 0, 0, 0.7);
     margin-block: 3vh;
 }
 
-button{
+button {
     font-weight: 600;
     cursor: pointer;
+    font-family: Euclid;
+
 }
 
-.hc-btns{
+.hc-btns {
     justify-content: center;
     margin-block: 5vh;
 }
 
-.home-banner img{
+.home-banner img {
     width: 100%;
 }
 
@@ -39,11 +41,11 @@ button{
     margin-bottom: -4px;
 }
 
-hr{
+hr {
     margin: 0 !important;
 }
 
-.partners{
+.partners {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,19 +55,20 @@ hr{
 
 }
 
-.partners p{
+.partners p {
     font-size: larger;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
-.partners-img{
+.partners-img {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5vh;
 
 }
-.partners-img img{
+
+.partners-img img {
     max-width: 10%;
 }
 
@@ -78,32 +81,32 @@ hr{
     justify-content: space-between;
 }
 
-.features-head-left{
+.features-head-left {
     width: 30%;
     text-align: left;
 }
 
-.features-head-left h1{
+.features-head-left h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
 }
 
-.features-head-right{
+.features-head-right {
     width: 38%;
     text-align: left;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     line-height: 30px;
-    font-size: larger;  
+    font-size: larger;
 }
 
 
-.carousal{
+.carousal {
     display: flex;
     position: relative;
     margin: 2rem 10rem auto;
 }
 
-.next-btn{
+.next-btn {
     position: absolute;
     width: 2%;
     height: 8%;
@@ -114,36 +117,36 @@ hr{
     padding: 1vh;
 }
 
-.usecase{
+.usecase {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5rem 10rem auto;
     padding: 5vh;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     text-align: left;
     font-size: smaller;
 }
 
-.usecase-text h1{
+.usecase-text h1 {
     margin: 0;
-    
+
 }
 
-.usecase-text p{
+.usecase-text p {
     margin-block: 10px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.usecase button{
+.usecase button {
     padding: 1vh;
     padding-inline: 2vh;
     border-radius: 1vh;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.devdocs{
-    background-color: rgba(19,23,31,0.9);
+.devdocs {
+    background-color: rgba(19, 23, 31, 1);
     color: white;
     position: relative;
     width: 90%;
@@ -151,64 +154,195 @@ hr{
     margin-bottom: 0;
 }
 
-.marq{
+.marq {
     position: absolute;
     top: 35%;
     width: 100%;
 }
 
-.devdocs img{
+.devdocs img {
     z-index: 9;
     position: relative;
 }
 
-.devdocs-text h2{
+.devdocs-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: xxx-large;
     margin: 0;
 }
 
-.devdocs-text p{
+.devdocs-text p {
     margin: 0;
 }
 
-.devdocs-text{
+.devdocs-text {
     margin-top: 5rem;
 }
 
-.devdocs-text .desc{
+.devdocs-text .desc {
     width: 50%;
     text-align: center;
     margin: 1rem auto;
     font-weight: 500;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.docs-btn{
+.docs-btn {
     background-color: white;
     color: black;
     padding: 1vh;
     padding-inline: 2vh;
     border-radius: 1vh;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
-.webhooks{
+.webhooks {
     display: flex;
+    flex-direction: column;
     margin: 5rem auto;
     justify-content: space-between;
-    background-color: rgba(19,23,31,0.9);
+    background-color: rgba(19, 23, 31, 1);
     color: white;
     margin-top: 0;
     width: 90%;
+    margin-bottom: 0;
 }
 
-.wh{
+.wh-body {
+    display: flex;
+}
+
+.wh {
     display: flex;
     flex-direction: column;
     width: 50vh;
     align-items: center;
     padding: 5vh;
+}
+
+.designed, .payments {
+    background-color: #e9edf5;
+    padding-block: 5vh;
+}
+
+.designed-text {
+    width: 30%;
+    text-align: left;
+    margin: 2rem 10rem auto;
+}
+
+.designed-text h2 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-weight: 100;
+    width: 80vh;
+}
+
+.designed-text .desc {
+    text-align: left;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    padding-block: 2vh;
+}
+
+.designed-imgs {
+    display: flex;
+    text-align: left;
+    padding-inline: 10rem;
+    justify-content: space-between;
+}
+
+.di-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+}
+
+.di-img.img1 {
+    background-image: url(' ../../Assets/img/frame1.png');
+}
+
+.di-img.img2 {
+    background-image: url(' ../../Assets/img/frame-2.png');
+}
+
+.di-img.img3 {
+    background-image: url(' ../../Assets/img/frame-4.png');
+}
+
+.di-img.img4 {
+    background-image: url(' ../../Assets/img/frame-4.png');
+}
+
+.di-desc{
+    max-width: 17vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.global-buisness{
+    margin-top: 10vh;
+}
+
+.gb-row{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    justify-content: space-between;
+    height: 35vh;
+}
+
+.gl-desc{
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+
+.gb-table {
+    display: flex;
+    margin: 3rem 10rem auto;
+
+}
+
+.gb-row p{
+    margin: 0;
+    text-align: left;
+}
+
+.gb-row:nth-child(3){
+    padding-left: 6rem;
+}
+
+.payments{
+    margin-top: 10vh;
+    text-align: left;
+    padding-inline:  10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.payments h1{
+    font-family: 'Playfair Display', serif;
+    font-size: xxx-large;
+}
+
+.payments p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.hom-footer img{
+    width: 5%;
+}
+
+.hom-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5rem 10rem auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
 }
