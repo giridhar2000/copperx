@@ -141,3 +141,74 @@ hr{
     border-radius: 1vh;
     border: 1px solid rgba(0,0,0,0.1);
 }
+
+.devdocs{
+    background-color: rgba(19,23,31,0.9);
+    color: white;
+    position: relative;
+    width: 90%;
+    margin: 5rem auto;
+    margin-bottom: 0;
+}
+
+.marq{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.devdocs img{
+    z-index: 9;
+    position: relative;
+}
+
+.devdocs-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: xxx-large;
+    margin: 0;
+}
+
+.devdocs-text p{
+    margin: 0;
+}
+
+.devdocs-text{
+    margin-top: 5rem;
+}
+
+.devdocs-text .desc{
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+}
+
+.docs-btn{
+    background-color: white;
+    color: black;
+    padding: 1vh;
+    padding-inline: 2vh;
+    border-radius: 1vh;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.webhooks{
+    display: flex;
+    margin: 5rem auto;
+    justify-content: space-between;
+    background-color: rgba(19,23,31,0.9);
+    color: white;
+    margin-top: 0;
+    width: 90%;
+}
+
+.wh{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    align-items: center;
+    padding: 5vh;
+}

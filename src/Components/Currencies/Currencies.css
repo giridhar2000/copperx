@@ -1,0 +1,13 @@
+.currencies{
+    display: flex;
+}
+
+.currency{
+    box-shadow: rgba(255, 255, 255,0.3) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.1) -3px -3px 6px 1px inset;
+    border-radius: 5vh;
+    padding-block: 1vh;
+    padding-inline: 3vh;
+    margin-left: 3vh;
+    margin-bottom: 3vh;
+    opacity: 0.2;
+}
