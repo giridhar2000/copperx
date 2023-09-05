@@ -1,0 +1,143 @@
+.home{
+    font-family: Euclid;
+    font-weight: 600;
+}
+
+.center{
+    width: 700px;
+    margin: 1rem auto;
+}
+
+.home-container h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    text-align: center;
+}
+
+.home-container p{
+    color: rgba(0,0,0,0.7);
+    margin-block: 3vh;
+}
+
+button{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hc-btns{
+    justify-content: center;
+    margin-block: 5vh;
+}
+
+.home-banner img{
+    width: 100%;
+}
+
+.home-banner {
+    width: 85%;
+    margin: 1rem auto;
+    margin-bottom: -4px;
+}
+
+hr{
+    margin: 0 !important;
+}
+
+.partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+    padding: 2vh;
+
+}
+
+.partners p{
+    font-size: larger;
+    color: rgba(0,0,0,0.7);
+}
+
+.partners-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh;
+
+}
+.partners-img img{
+    max-width: 10%;
+}
+
+.features {
+    margin: 2rem 10rem auto;
+}
+
+.features-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-head-left{
+    width: 30%;
+    text-align: left;
+}
+
+.features-head-left h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.features-head-right{
+    width: 38%;
+    text-align: left;
+    color: rgba(0,0,0,0.5);
+    line-height: 30px;
+    font-size: larger;  
+}
+
+
+.carousal{
+    display: flex;
+    position: relative;
+    margin: 2rem 10rem auto;
+}
+
+.next-btn{
+    position: absolute;
+    width: 2%;
+    height: 8%;
+    right: 3vh;
+    bottom: 50%;
+    background: black;
+    border-radius: 50%;
+    padding: 1vh;
+}
+
+.usecase{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 10rem auto;
+    padding: 5vh;
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: left;
+    font-size: smaller;
+}
+
+.usecase-text h1{
+    margin: 0;
+    
+}
+
+.usecase-text p{
+    margin-block: 10px;
+    color: rgba(0,0,0,0.5);
+}
+
+.usecase button{
+    padding: 1vh;
+    padding-inline: 2vh;
+    border-radius: 1vh;
+    border: 1px solid rgba(0,0,0,0.1);
+}

@@ -1,0 +1,64 @@
+.navbar{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background-color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.nav-center {
+    margin: 0rem 5rem auto;
+    padding-block: 2vh;
+}
+
+.nav img{
+    width: 10%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    color: rgba(0,0,0,0.6);
+}
+
+.menu span{
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.menu span:hover{
+    background: rgba(0,0,0,0.1);
+    color: black;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    gap: 3vh;
+}
+
+.btns button{
+    padding: 1vh;
+    padding-inline: 2vh;
+    border-radius: 1vh;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.login-btn{
+    background-color: white;
+    color: black;
+}
+
+.gs-btn{
+    background-color: black;
+    color: white;
+}

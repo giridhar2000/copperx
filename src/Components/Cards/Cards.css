@@ -1,0 +1,49 @@
+.cards{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-img{
+    width: 85%;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.cards-img:hover{
+    transform: translateY(-50px);
+
+}
+
+.cards-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.cards-footer img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.card-title, .card-link, .card-desc{
+    position: relative;
+    padding: 1px;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.card-link{
+    color: #4C63ED;
+}
+
+.card-desc{
+    font-weight: 100;
+}
