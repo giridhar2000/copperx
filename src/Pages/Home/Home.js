@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Home/Home.css"
-import banner from "../../Assets/img/home-banner.png"
+import banner from "../../Assets/img/HOM LP.png"
 import coincards from "../../Assets/img/coin-cards.svg"
 import chainstack from "../../Assets/img/chainstack.png"
 import jupiter from "../../Assets/img/jupiter.svg"
