@@ -35,6 +35,9 @@ import NC from "../../Assets/img/no-chargeback.svg"
 import GG from "../../Assets/img/go-global.svg"
 import LF from "../../Assets/img/low-fees.svg"
 import logoImg from "../../Assets/img/logoImg.png"
+import globe from "../../Assets/img/globe.png"
+import tele from "../../Assets/img/telegram-black.svg"
+import team from "../../Assets/img/team.svg"
 
 export default function Home() {
     const currency1 = ["BTC", "SOLANA", "MATIC", "BRIDGE", "GATECODE-PAY", "ETH", "POLYGON", "BTC", "SOLANA", "MATIC", "BRIDGE", "GATECODE-PAY", "ETH", "POLYGON"]
@@ -250,14 +253,93 @@ export default function Home() {
                     <button className='gs-btn'>Get Started</button>
                     <button className='login-btn'>Book a Demo</button>
                 </div>
+                <img src={globe} alt="" className='globe-img' />
+
             </div>
 
             <div className='footer'>
                 <div className='hom-footer'>
                     <img src={logoImg} alt='logo-img' />
-                    <h1>Simplified Payments for Web3 Buisnesses.</h1>
+                    <h1 style={{textAlign: "left" }}>Simplified Payments for Web3 Buisnesses.</h1>
                 </div>
-                
+
+                <div className='footer-menus'>
+                    <div className='ft footer-features'>
+                        <h3>Features</h3>
+                        <a href='/'>Payments Links</a>
+                        <a href='/'>Recurring Billing</a>
+                        <a href='/'>Integrations</a>
+                    </div>
+
+                    <div className='ft footer-usecase'>
+                        <h3>Use-cases</h3>
+                        <a href='/'>E-Commerce</a>
+                        <a href='/'>Donation</a>
+                        <a href='/'>Ticketing</a>
+                    </div>
+
+                    <div className='ft footer-comparison'>
+                        <h3>Comparison</h3>
+                        <a href='/'>vs Coinbase Commerce</a>
+                        <a href='/'>vs BitPay</a>
+                        <a href='/'>vs Request Finance</a>
+                        <a href='/'>vs Loop Crypto</a>
+                    </div>
+
+                    <div className='ft footer-developers'>
+                        <h3>Developers</h3>
+                        <a href='/'>Payments Links</a>
+                        <a href='/'>Recurring Billing</a>
+                        <a href='/'>Integrations</a>
+                    </div>
+
+                    <div className='ft footer-resources'>
+                        <h3>Resources</h3>
+                        <a href='/'>Tutorials</a>
+                        <a href='/'>Blog</a>
+                        <a href='/'>Telegram community</a>
+                    </div>
+
+                    <div className='ft footer-about'>
+                        <h3>About</h3>
+                        <a href='/'>Brand kit</a>
+                        <a href='/'>Change log</a>
+                        <a href='/'>Contact us</a>
+                        <a href='/'>Terms and condition</a>
+                        <a href='/'>Privacy policy</a>
+                    </div>
+                </div>
+
+                <div className='join'>
+                    <div className='join-block'>
+                        <h3>Join the community &rarr;</h3>
+                        <img src={tele} alt="tele-img" />
+                    </div>
+                    <div className='join-block'>
+                        <h3>Join the Team &rarr;</h3>
+                        <img src={team} alt="team-img" />
+                    </div>
+                </div>
+
+                <div className='ft social-media'>
+                    <a href='/'>Twitter</a>
+                    <a href='/'>Facebook</a>
+                    <a href='/'>Instagram</a>
+                    <a href='/'>Linkedin</a>
+                    <a href='/'>Lenster</a>
+                    <a href='/'>Youtube</a>
+                    <a href='/'>Reddit</a>
+                    <a href='/'>Telegram</a>
+                </div>
+
+                <div className='tech' style={{textAlign: "left", margin: "1rem 10rem auto", color: "rgba(0,0,0,0.4", marginBottom: "5vh"}}>
+                    <p>© 2023 Piers Technology</p>
+                </div>
+
+                <hr className='footer-hr'></hr>
+
+                <div style={{marginBottom: "4rem"}}></div>
+
             </div>
 
         </div>

@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.divider{
+  border: 1px solid rgba(0,0,0,0.1);;
+  height: 6012.69px;
+  position: absolute;
+  top: 0;
+  margin: 0rem 4rem auto;
+  z-index: 999;
+}
+
+.footer-divider{
+  border: 1px solid rgba(0,0,0,0.1);
+  height: 6012.69px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0rem 4rem auto;
+  z-index: 999;
+}
+
+@media(max-width:767px) {
+  .App{
+    width: fit-content;
+  }
+}

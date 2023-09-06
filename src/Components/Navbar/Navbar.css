@@ -61,3 +61,29 @@
     background-color: black;
     color: white;
 }
+.mob{
+    display: none;
+}
+
+@media(max-width:767px) {
+    .menu{
+        display: none;
+    }
+    .nav-center{
+        padding-left: 3vh;
+    }
+    .mob-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .mob-drawer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .mob{
+        display: block;
+        padding-right: 3vh;
+    }
+    
+}
