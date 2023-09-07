@@ -355,6 +355,17 @@ hr {
     margin-bottom: 2rem;
 }
 
+/* .styles-module_carousel-arrow__26sRw {
+    z-index: 1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 3vh;
+    background-color: black;
+    position: relative;
+    top: 50%;
+
+} */
+
 .globe-img {
     position: absolute;
     width: 36%;

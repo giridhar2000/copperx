@@ -1,0 +1,14 @@
+.right-arrow{
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    top: 50%;
+    background-color: black;
+    border-radius: 3vh;
+    background-image: url("../../Assets/img/arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    margin-left: 2vh;
+}

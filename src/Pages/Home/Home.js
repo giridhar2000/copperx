@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../Home/Home.css"
 import banner from "../../Assets/img/HOM LP.png"
 import coincards from "../../Assets/img/coin-cards.svg"
@@ -38,11 +38,21 @@ import logoImg from "../../Assets/img/logoImg.png"
 import globe from "../../Assets/img/globe.png"
 import tele from "../../Assets/img/telegram-black.svg"
 import team from "../../Assets/img/team.svg"
+import { Carousel } from '@trendyol-js/react-carousel';
+import leftArrow from "../../Assets/img/arrow.png"
+import LeftArrow from '../../Components/LeftArrow/LeftArrow'
+import RightArrow from '../../Components/RightArrow/RightArrow'
+
 
 export default function Home() {
     const currency1 = ["BTC", "SOLANA", "MATIC", "BRIDGE", "GATECODE-PAY", "ETH", "POLYGON", "BTC", "SOLANA", "MATIC", "BRIDGE", "GATECODE-PAY", "ETH", "POLYGON"]
     const currency2 = ["USDT", "CROSS CHAIN", "SOL", "BRIDGE", "USDC", "ETHEREUM", "COINBASE PAY", "USDT", "CROSS CHAIN", "SOL", "BRIDGE", "USDC", "ETHEREUM", "COINBASE PAY"]
     const currency3 = ["BINANCE SMART CHAIN", "BNB", "BUSD", "BINANCE PAY", "AUTO SWAP", "DAI", "BINANCE SMART CHAIN", "BNB", "BUSD", "BINANCE PAY", "AUTO SWAP", "DAI"]
+        // let btn = document.getElementsByClassName("styles-module_carousel-arrow__26sRw")
+        // let type = btn.getAttribute("data-direction");
+        // if (type === "right") {
+        //     btn.style.webkitTransform = 'rotate(' + 180 + 'deg)';
+        // }
 
     return (
         <div className='home'>
@@ -88,17 +98,14 @@ export default function Home() {
             </div>
 
             <div className='carousal'>
-                <Cards bgImg={frame1} img={paymentLink} cardTitle={"Payment Link"} cardDesc={'The smart no-code way to get paid for your goods and services.'} link={"Live"} />
-                <Cards bgImg={frame2} img={checkout} cardTitle={"Checkout"} cardDesc={'Optimize your checkout and increase conversions with our hosted payment page, tailored for success.'} link={"Live"} />
-                <Cards bgImg={frame3} img={invoicing} cardTitle={"Invoicing"} cardDesc={'Create & send invoice to your customers in an organized way.'} link={"Live"} />
-                <Cards bgImg={frame4} img={recurring} cardTitle={"Recurring Billing"} cardDesc={'Now accept subscription payments on blockchain without writing smart contracts.'} link={"Live"} />
-                <Cards bgImg={frame1} img={payouts} cardTitle={"Payouts"} cardDesc={'Perfect solution for your marketplace, platform or sending payouts across the world.'} link={"Live"} />
-                <div className='next-btn'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" className="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                <Carousel show={3.5} slide={2} leftArrow={<LeftArrow />} rightArrow={<RightArrow />}>
 
-                    </svg>
-                </div>
+                    <Cards bgImg={frame1} img={paymentLink} cardTitle={"Payment Link"} cardDesc={'The smart no-code way to get paid for your goods and services.'} link={"Live"} />
+                    <Cards bgImg={frame2} img={checkout} cardTitle={"Checkout"} cardDesc={'Optimize your checkout and increase conversions with our hosted payment page, tailored for success.'} link={"Live"} />
+                    <Cards bgImg={frame3} img={invoicing} cardTitle={"Invoicing"} cardDesc={'Create & send invoice to your customers in an organized way.'} link={"Live"} />
+                    <Cards bgImg={frame4} img={recurring} cardTitle={"Recurring Billing"} cardDesc={'Now accept subscription payments on blockchain without writing smart contracts.'} link={"Live"} />
+                    <Cards bgImg={frame1} img={payouts} cardTitle={"Payouts"} cardDesc={'Perfect solution for your marketplace, platform or sending payouts across the world.'} link={"Live"} />
+                </Carousel>
 
 
             </div>
@@ -260,7 +267,7 @@ export default function Home() {
             <div className='footer'>
                 <div className='hom-footer'>
                     <img src={logoImg} alt='logo-img' />
-                    <h1 style={{textAlign: "left" }}>Simplified Payments for Web3 Buisnesses.</h1>
+                    <h1 style={{ textAlign: "left" }}>Simplified Payments for Web3 Buisnesses.</h1>
                 </div>
 
                 <div className='footer-menus'>
@@ -332,13 +339,13 @@ export default function Home() {
                     <a href='/'>Telegram</a>
                 </div>
 
-                <div className='tech' style={{textAlign: "left", margin: "1rem 10rem auto", color: "rgba(0,0,0,0.4", marginBottom: "5vh"}}>
+                <div className='tech' style={{ textAlign: "left", margin: "1rem 10rem auto", color: "rgba(0,0,0,0.4", marginBottom: "5vh" }}>
                     <p>© 2023 Piers Technology</p>
                 </div>
 
                 <hr className='footer-hr'></hr>
 
-                <div style={{marginBottom: "4rem"}}></div>
+                <div style={{ marginBottom: "4rem" }}></div>
 
             </div>
 

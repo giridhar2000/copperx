@@ -4,10 +4,11 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 25%;
+    margin-right: 2vh;
     align-items: center;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .cards-img{
